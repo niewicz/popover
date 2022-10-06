@@ -23,7 +23,7 @@
     "@angular-devkit/core" "14.2.5"
     "rxjs" "6.6.7"
 
-"@angular-devkit/build-angular@~14.2.5":
+"@angular-devkit/build-angular@^14.2.5":
   "integrity" "sha512-jSgH11E+zs1C24lXj7R/PgXsTUpoYoMr1GtO6mpVROgXL5czVlL+b/B1p2HwbcAKuI9WXb48X6OZ6fOZhDQlSg=="
   "resolved" "https://registry.npmjs.org/@angular-devkit/build-angular/-/build-angular-14.2.5.tgz"
   "version" "14.2.5"
@@ -139,7 +139,7 @@
   optionalDependencies:
     "parse5" "^5.0.0"
 
-"@angular/cli@~14.2.5":
+"@angular/cli@^14.2.5":
   "integrity" "sha512-jrvQ7nv/8k8i6D7LXrZi+DXQQkpmqoxC/NZL7hH1zyB9shlnG/ekMl+T4y7tvg3MWKxJuIfWVtz/EwOkMKmEaA=="
   "resolved" "https://registry.npmjs.org/@angular/cli/-/cli-14.2.5.tgz"
   "version" "14.2.5"
