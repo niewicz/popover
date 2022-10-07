@@ -1,17 +1,15 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { RouterModule } from "@angular/router";
+import { MatButtonModule } from "@angular/material/button";
+import { MatCardModule } from "@angular/material/card";
 
+import { MdePopoverModule } from "@md-extension/mde-popover";
 
-import { MdePopoverModule } from '@material-extended/mde';
+import { ExamplesModule } from "./examples/examples.module";
+import { ErrorModule } from "./error/error.module";
 
-import { ExamplesModule } from './examples/examples.module';
-import { ErrorModule } from './error/error.module';
-
-import { HomeComponent } from './home/home.component';
-
+import { HomeComponent } from "./home/home.component";
 
 @NgModule({
   imports: [
@@ -21,16 +19,9 @@ import { HomeComponent } from './home/home.component';
     MatButtonModule,
     MdePopoverModule,
     ErrorModule,
-    ExamplesModule
-  ],
-  declarations: [
-    HomeComponent
-  ],
-  exports: [
     ExamplesModule,
-    HomeComponent
-  ]
+  ],
+  declarations: [HomeComponent],
+  exports: [ExamplesModule, HomeComponent],
 })
-export class PagesModule { }
-
-
+export class PagesModule {}

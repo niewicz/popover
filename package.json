@@ -1,15 +1,15 @@
 {
-  "name": "@niewicz/mde",
+  "name": "@md-extension/mde-popover",
   "description": "Angular Material Extended",
   "version": "14.0.0",
   "author": "Joe Jordan Brown <joe.jordan.brown@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/material-extended/mde.git"
+    "url": "git+https://github.com/niewicz/popover.git"
   },
   "bugs": {
-    "url": "https://github.com/material-extended/mde/issues"
+    "url": "https://github.com/niewicz/popover/issues"
   },
   "keywords": [
     "angular",
@@ -30,15 +30,12 @@
     "start": "npm run build:library && npm run serve",
     "serve": "ng serve --aot",
     "build": "ng build",
-    "build:library": "ng build @material-extended/mde",
-    "build:library:prod": "ng build @material-extended/mde --configuration production",
+    "build:library": "ng build mde-popover && npm run postbuild:library",
+    "build:library:prod": "ng build mde-popover --configuration production && npm run postbuild:library",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "release": "standard-version",
-    "release:alpha": "standard-version --prerelease alpha",
-    "release:beta": "standard-version --prerelease beta",
-    "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points"
+    "postbuild:library": "cp -f *.md dist/mde-popover"
   },
   "dependencies": {
     "@angular/animations": "^14.2.5",
@@ -74,11 +71,10 @@
     "karma-jasmine-html-reporter": "^2.0.0",
     "ng-packagr": "^14.2.1",
     "protractor": "~7.0.0",
-    "standard-version": "^9.5.0",
     "ts-node": "^10.9.1",
     "tslint": "~6.1.0",
     "typescript": "~4.6.4"
   },
-  "homepage": "https://github.com/material-extended/mde#readme",
+  "homepage": "https://github.com/niewicz/popover#readme",
   "main": "index.d.ts"
 }

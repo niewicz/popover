@@ -1,25 +1,23 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
-import { MatInputModule } from '@angular/material/input';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { FormsModule } from "@angular/forms";
+import { MatInputModule } from "@angular/material/input";
 
-import { MdePopoverModule } from '@material-extended/mde';
+import { MdePopoverModule } from "@md-extension/mde-popover";
 
-import { ExamplesRoutingModule } from './examples-routing.module';
+import { ExamplesRoutingModule } from "./examples-routing.module";
 
-import { ErrorModule } from '../error/error.module';
+import { ErrorModule } from "../error/error.module";
 
-import { PageExamplesComponent } from './examples.component';
-import { PageExamplesFormComponent } from './form/form.component';
-import { PageExamplesBuilderComponent } from './builder/builder.component';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { MatButtonToggleModule } from '@angular/material/button-toggle';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatSelectModule } from '@angular/material/select';
-
+import { PageExamplesComponent } from "./examples.component";
+import { PageExamplesFormComponent } from "./form/form.component";
+import { PageExamplesBuilderComponent } from "./builder/builder.component";
+import { MatCardModule } from "@angular/material/card";
+import { MatButtonModule } from "@angular/material/button";
+import { MatButtonToggleModule } from "@angular/material/button-toggle";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatCheckboxModule } from "@angular/material/checkbox";
+import { MatSelectModule } from "@angular/material/select";
 
 @NgModule({
   imports: [
@@ -39,7 +37,7 @@ import { MatSelectModule } from '@angular/material/select';
   declarations: [
     PageExamplesComponent,
     PageExamplesFormComponent,
-    PageExamplesBuilderComponent
-  ]
+    PageExamplesBuilderComponent,
+  ],
 })
-export class ExamplesModule { }
+export class ExamplesModule {}

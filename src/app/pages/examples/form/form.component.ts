@@ -1,18 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { MdePopoverTrigger } from '@material-extended/mde';
+import { Component, OnInit } from "@angular/core";
+import { MdePopoverTrigger } from "@md-extension/mde-popover";
 
 // import 'rxjs/add/operator/first';
 
-import { first } from 'rxjs/operators';
-
+import { first } from "rxjs/operators";
 
 @Component({
-  selector: 'app-form',
-  templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
+  selector: "app-form",
+  templateUrl: "./form.component.html",
+  styleUrls: ["./form.component.scss"],
 })
 export class PageExamplesFormComponent implements OnInit {
-
   popoverText: string;
   previousRef: MdePopoverTrigger;
   popoverOpen = false;
@@ -20,25 +18,24 @@ export class PageExamplesFormComponent implements OnInit {
 
   closeTimeout: any;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   openPopover(ref: MdePopoverTrigger, text: string) {
-    console.log('this.previousRef', this.previousRef);
-    console.log('ref', ref);
+    console.log("this.previousRef", this.previousRef);
+    console.log("ref", ref);
     // if (this.previousRef !== ref) {
     // this.popoverText = text;
     // ref.openPopover();
     // }
 
     if (this.previousRef !== ref) {
-      console.log('this.previousRef !== ref');
+      console.log("this.previousRef !== ref");
       ref.openPopover();
       this.popoverSwitching = false;
     } else {
-      console.log('this.previousRef === ref');
+      console.log("this.previousRef === ref");
       this.popoverSwitching = true;
       clearTimeout(this.closeTimeout);
     }
@@ -51,31 +48,22 @@ export class PageExamplesFormComponent implements OnInit {
   closePopover(ref: MdePopoverTrigger) {
     this.closeTimeout = setTimeout(() => {
       // if (!this.popoverSwitching) {
-        ref.closePopover();
-        this.popoverOpen = false;
-        this.previousRef = null;
+      ref.closePopover();
+      this.popoverOpen = false;
+      this.previousRef = null;
       // }
     }, 400);
   }
 
-
-
-
-
-
-
-
-
-
   openPopoverOld(ref: MdePopoverTrigger, text: string) {
-    console.log('this.previousRef', this.previousRef);
-    console.log('ref', ref);
+    console.log("this.previousRef", this.previousRef);
+    console.log("ref", ref);
     // if (this.previousRef !== ref) {
     // this.popoverText = text;
     // ref.openPopover();
     // }
     if (this.popoverOpen) {
-      console.log('switching');
+      console.log("switching");
       this.popoverSwitching = true;
       // setTimeout(() => {
       clearTimeout(this.closeTimeout);
@@ -85,7 +73,7 @@ export class PageExamplesFormComponent implements OnInit {
       this.popoverSwitching = false;
     }
     ref.closed.pipe(first()).subscribe(() => {
-      console.log('event', event);
+      console.log("event", event);
     });
     this.popoverText = text;
     this.previousRef = ref;
@@ -97,11 +85,13 @@ export class PageExamplesFormComponent implements OnInit {
       if (!this.popoverSwitching) {
         ref.closePopover();
         this.popoverOpen = false;
-        console.log('Close, this.popoverSwitching', this.popoverSwitching);
+        console.log("Close, this.popoverSwitching", this.popoverSwitching);
       } else {
-        console.log('Don\'t close, this.popoverSwitching', this.popoverSwitching);
+        console.log(
+          "Don't close, this.popoverSwitching",
+          this.popoverSwitching
+        );
       }
     }, 600);
   }
-
 }

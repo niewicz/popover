@@ -5,11 +5,11 @@
       "type": "json"
     },
     {
-      "filename": "projects/material-extended/mde/package.json",
+      "filename": "projects/mde-popover/package.json",
       "type": "json"
     },
     {
-      "filename": "dist/material-extended/mde/package.json",
+      "filename": "dist/mde-popover/package.json",
       "type": "json"
     }
   ]

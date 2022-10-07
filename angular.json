@@ -22,13 +22,8 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": [],
             "vendorChunk": true,
             "extractLicenses": false,
@@ -86,14 +81,9 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["src/styles.scss"],
             "scripts": [],
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ]
+            "assets": ["src/favicon.ico", "src/assets"]
           }
         }
       }
@@ -111,30 +101,30 @@
         }
       }
     },
-    "@material-extended/mde": {
-      "root": "projects/material-extended/mde",
-      "sourceRoot": "projects/material-extended/mde/src",
+    "mde-popover": {
+      "root": "projects/mde-popover",
+      "sourceRoot": "projects/mde-popover/src",
       "projectType": "library",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/material-extended/mde/tsconfig.lib.json",
-            "project": "projects/material-extended/mde/ng-package.json"
+            "tsConfig": "projects/mde-popover/tsconfig.lib.json",
+            "project": "projects/mde-popover/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/material-extended/mde/tsconfig.lib.prod.json"
+              "tsConfig": "projects/mde-popover/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/material-extended/mde/src/test.ts",
-            "tsConfig": "projects/material-extended/mde/tsconfig.spec.json",
-            "karmaConfig": "projects/material-extended/mde/karma.conf.js"
+            "main": "projects/mde-popover/src/test.ts",
+            "tsConfig": "projects/mde-popover/tsconfig.spec.json",
+            "karmaConfig": "projects/mde-popover/karma.conf.js"
           }
         }
       }
