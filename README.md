@@ -1,12 +1,13 @@
 # Angular Popover
 
-[![npm version](https://badge.fury.io/js/%40md-extension%2Fmde-popover.svg)](https://www.npmjs.com/package/%40md-extension%2Fmde-popover)
+[![npm version](https://badge.fury.io/js/mde-popover.svg)](https://www.npmjs.com/package//mde-popover)
 
 ### Project status
 
-Angular Popover is production ready for Angular 14.
+Angular Material Popover is production ready for Angular 14.
 
-This is forked project from [joejordanbrown/popover](https://github.com/joejordanbrown/popover)
+This is forked project from [joejordanbrown/popover](https://github.com/joejordanbrown/popover).
+
 This was originally created as an example for a `@angular/material` issue feature request.
 Issue can be found at [angular/material2#2691](https://github.com/angular/material2/issues/2691).
 
@@ -91,5 +92,3 @@ Please report bugs and issues [here](https://github.com/niewicz/popover/issues).
 MIT ©
 
 [Angular Popover by UIXD](https://uixd.co.uk)
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%niewicz%2Fpopover.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%niewicz%2Fpopover?ref=badge_large)

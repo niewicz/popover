@@ -14,7 +14,7 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2018", "dom"],
     "paths": {
-      "@md-extension/mde-popover": ["dist/mde-popover"]
+      "mde-popover": ["dist/mde-popover"]
     }
   },
   "angularCompilerOptions": {
