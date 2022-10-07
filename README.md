@@ -1,6 +1,6 @@
 # Angular Popover
 
-[![npm version](https://badge.fury.io/js/%40material-extended%2Fmde.svg)](https://www.npmjs.com/package/%40material-extended%2Fmde)
+[![npm version](https://badge.fury.io/js/%40md-extension%2Fmde-popover.svg)](https://www.npmjs.com/package/%40md-extension%2Fmde-popover)
 
 ### Project status
 
