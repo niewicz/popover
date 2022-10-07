@@ -1,5 +1,5 @@
 {
-  "name": "mde-popover",
+  "name": "@md-extension/mde-popover",
   "version": "14.0.0",
   "dependencies": {
     "tslib": "^2.0.0"

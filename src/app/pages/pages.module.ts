@@ -4,7 +4,7 @@ import { RouterModule } from "@angular/router";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
 
-import { MdePopoverModule } from "mde-popover";
+import { MdePopoverModule } from "@md-extension/mde-popover";
 
 import { ExamplesModule } from "./examples/examples.module";
 import { ErrorModule } from "./error/error.module";
