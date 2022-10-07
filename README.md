@@ -1,6 +1,6 @@
 # Angular Popover
 
-[![npm version](https://badge.fury.io/js/%40md-extension%2Fmde-popover.svg)](https://www.npmjs.com/package/%40md-extension%2Fmde-popover)
+[![npm version](https://badge.fury.io/js/%40niewicz%2Fmde-popover.svg)](https://www.npmjs.com/package/%40niewicz%2Fmde-popover)
 
 ### Project status
 
@@ -33,9 +33,9 @@ If you'd like to contribute please create an issue or pull request.
 
 Install npm package using:
 
-`yarn add @material-extended/mde`
+`yarn add @niewicz/mde-popover`
 or
-`npm install @material-extended/mde`
+`npm install @niewicz/mde-popover`
 
 Install required packages @angular/cdk
 
@@ -58,7 +58,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
 import { AppComponent } from "./app.component";
-import { MdePopoverModule } from "@material-extended/mde";
+import { MdePopoverModule } from "@niewicz/mde-popover";
 
 @NgModule({
   declarations: [AppComponent],

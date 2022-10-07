@@ -1,7 +1,7 @@
 {
-  "name": "@md-extension/mde-popover",
+  "name": "@niewicz/mde-popover",
   "description": "Angular Material Extended",
-  "version": "14.0.0",
+  "version": "14.0.1",
   "author": "Joe Jordan Brown <joe.jordan.brown@gmail.com>",
   "license": "MIT",
   "repository": {
